@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is the Sauce Labs Sample Application which is designed to be used from desktop web browsers",
   "main": "index.html",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development",
