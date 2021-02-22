@@ -7,8 +7,8 @@
     "node": "14.x"
   },
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
+    "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
+    "original-start": "webpack-dev-server --mode development",
     "test.e2e.local": "wdio test/e2e/configs/wdio.local.chrome.conf.js",
     "test.e2e.sauce.eu": "REGION=eu wdio test/e2e/configs/wdio.saucelabs.conf.js",
     "test.e2e.sauce.us": "wdio test/e2e/configs/wdio.saucelabs.conf.js",
