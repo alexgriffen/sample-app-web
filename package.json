@@ -8,8 +8,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start-local": "webpack-dev-server --mode development",
-    "start": "npm run build && node scripts/createServeFile.js && serve -s dist",
+    "start": "webpack-dev-server --mode development",
     "test.e2e.local": "wdio test/e2e/configs/wdio.local.chrome.conf.js",
     "test.e2e.sauce.eu": "REGION=eu wdio test/e2e/configs/wdio.saucelabs.conf.js",
     "test.e2e.sauce.us": "wdio test/e2e/configs/wdio.saucelabs.conf.js",
