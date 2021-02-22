@@ -76,7 +76,7 @@ module.exports = {
         contentBase: resolve(__dirname, "dist"),
         historyApiFallback: true,
         compress: true,
-        port: 3000,
+        port: 443,
         open: "Google Chrome",
         watchContentBase: true
     }
