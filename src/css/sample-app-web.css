@@ -616,7 +616,7 @@ footer_legal {
 		text-align: center;
 		padding: 0 10px;
 	}
-	.social, .footer_copy, .footer_robot{
+	.social, .footer_copy, .footer_legal, .footer_robot{
 		position: relative;
 	}
 	.social{
@@ -629,6 +629,12 @@ footer_legal {
 	}
 
 	.footer_copy{
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		margin: 40px 0;
+	}
+	.footer_legal{
 		width: 100%;
 		left: 0;
 		bottom: 0;
