@@ -564,6 +564,7 @@ input {
 	}
 }
 .footer_copy,
+.footer_legal,
 .footer_robot,
 .social {
 	position: absolute;
@@ -572,6 +573,12 @@ input {
 	left: 50px;
 	bottom: 40px;
 	color: #fff;
+}
+footer_legal {
+	left: 50px;
+	bottom: 40px;
+	color: #fff;
+	size: auto;
 }
 .social {
 	list-style-type: none;
