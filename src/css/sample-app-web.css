@@ -638,7 +638,7 @@ input {
 		width: 65%;
 		left: 0;
 		bottom: 0;
-		right: 480px;
+		margin-right: 180px;
 		margin: 40px 0;
 	}
 	.footer_robot{
