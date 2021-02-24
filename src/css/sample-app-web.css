@@ -564,7 +564,6 @@ input {
 	}
 }
 .footer_copy,
-.footer_legal,
 .footer_robot,
 .social {
 	position: absolute;
@@ -573,12 +572,6 @@ input {
 	left: 50px;
 	bottom: 40px;
 	color: #fff;
-}
-.footer_legal {
-	left: 50px;
-	bottom: 55px;
-	color: #fff;
-	size: auto;
 }
 .social {
 	list-style-type: none;
@@ -616,7 +609,7 @@ input {
 		text-align: center;
 		padding: 0 10px;
 	}
-	.social, .footer_copy, .footer_legal, .footer_robot{
+	.social, .footer_copy, .footer_robot{
 		position: relative;
 	}
 	.social{
@@ -632,13 +625,6 @@ input {
 		width: 100%;
 		left: 0;
 		bottom: 0;
-		margin: 40px 0;
-	}
-	.footer_legal{
-		width: 65%;
-		left: 0;
-		bottom: 0;
-		margin-right: 180px;
 		margin: 40px 0;
 	}
 	.footer_robot{
