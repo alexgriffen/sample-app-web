@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -16,27 +16,26 @@ jobs:
         with:
           node-version: '14.x'
 
-      # build current site
-      - name: Current site
+      - name: Build site
         working-directory: ./
-        run: |
-          ls
-          yarn
-          yarn build
-
-      # build new site
-      - name: New site
-        working-directory: ./new
         env:
           CI: false
         run: |
           ls
-          yarn
-          yarn build
+          npm install
+          npm run build
+
+      - name: Build storybook
+        working-directory: ./
+        env:
+          CI: false
+        run: |
+          ls
+          npm run build.storybook
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./build
           cname: www.saucedemo.com
